@@ -1,0 +1,67 @@
+<%= form_with(model: meal, local: true) do |form| %>
+  <% if meal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(meal.errors.count, "error") %> prohibited this meal from being saved:</h2>
+
+      <ul>
+      <% meal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :meal1 %>
+    <%= form.text_field :meal1, id: :meal_meal1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :meal_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :meal2 %>
+    <%= form.text_field :meal2, id: :meal_meal2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :meal_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :meal3 %>
+    <%= form.text_field :meal3, id: :meal_meal3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :meal_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :meal4 %>
+    <%= form.text_field :meal4, id: :meal_meal4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :meal_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :meal5 %>
+    <%= form.text_field :meal5, id: :meal_meal5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :meal_description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

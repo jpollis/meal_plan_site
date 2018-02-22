@@ -1,0 +1,49 @@
+<%= form_with(model: customer, local: true) do |form| %>
+  <% if customer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(customer.errors.count, "error") %> prohibited this customer from being saved:</h2>
+
+      <ul>
+      <% customer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <form action="#">
+    <p>
+      <!-- <input type="checkbox" id="optin" /> -->
+      <%= form.check_box :optin, id: :customer_optin %>
+      <%= form.label "Would you like meals this week?", for: :customer_optin  %>
+    </p>
+
+  <div class="input-field">
+    <%#= form.label :name %>
+    <%= form.text_field :name, id: :customer_name, placeholder: "Name" %>
+  </div>
+
+  <div placeholder="Email" class="input-field">
+    <%#= form.label :email %>
+    <%= form.text_field :email, id: :customer_email, placeholder: "Email"  %>
+  </div>
+
+  <div class="input-field">
+    <%#= form.label :phone %>
+    <%= form.text_field :phone, id: :customer_phone, placeholder: "Phone" %>
+  </div>
+
+  <div class="input-field">
+    <%#= form.label :address%>
+    <%= form.text_field :address, id: :customer_address, placeholder: "Address" %>
+  </div>
+
+  <div class="input-field">
+    <%#= form.label :meal_count %>
+    <%= form.text_field :meal_count, id: :customer_meal_count, placeholder: "Meal Count" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

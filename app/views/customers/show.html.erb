@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col s12 m6">
+    <div class="card teal lighten-2">
+      <div class="card-content white-text">
+        <span class="card-title"><%= @customer.name %></span>
+        <p>
+          <strong>Email:</strong>
+          <%= @customer.email %>
+        </p>
+
+        <p>
+          <strong>Phone:</strong>
+          <%= @customer.phone %>
+        </p>
+
+        <p>
+          <strong>Address:</strong>
+          <%= @customer.address %>
+        </p>
+
+        <p>
+          <strong>Opt in:</strong>
+          <%= @customer.optin? ? "Yes" : "No" %>
+        </p>
+
+        <p>
+          <strong>Meal count:</strong>
+          <%= @customer.meal_count %>
+        </p>
+      </div>
+      <div class="card-action">
+        <%= link_to 'Edit', edit_customer_path(@customer) %>
+        <%= link_to 'Back', customers_path %>
+      </div>
+    </div>
+  </div>
+</div>

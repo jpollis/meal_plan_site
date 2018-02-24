@@ -1,8 +1,6 @@
 <p id="notice"><%= notice %></p>
-
 <h1>Customers</h1>
-
-<table>
+<table class="centered highlight">
   <thead>
     <tr>
       <th>Name</th>
@@ -21,7 +19,6 @@
         <td><%= customer.email %></td>
         <td><%= customer.phone %></td>
         <td><%= customer.address %></td>
-        <td><%#= customer.optin %></td>
         <td><%= customer.meal_count %></td>
         <td><%= link_to 'Show', customer %></td>
         <td><%= link_to 'Edit', edit_customer_path(customer) %></td>

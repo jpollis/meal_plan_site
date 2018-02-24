@@ -38,9 +38,15 @@
     <%= form.text_field :address, id: :customer_address, placeholder: "Address" %>
   </div>
 
-  <div class="input-field col s12">
-    <%= form.text_field :meal_count, id: :customer_meal_count, placeholder: "Choose a Plan" %>
+  <!-- <div class="input-field col s12">
+
+</div> -->
+
+<div class="input-field">
+  <%#= form.label :meal_count %>
+  <%= form.text_field :meal_count, id: :customer_meal_count, placeholder: "How many meals would you like?"%>
 </div>
+
     <%#= form.label :meal_count %>
 
 

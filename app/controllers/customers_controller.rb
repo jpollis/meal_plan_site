@@ -1,5 +1,6 @@
 class CustomersController < ApplicationController
   before_action :set_customer, only: [:show, :edit, :update, :destroy]
+  # before_action :plans, only: [:new, :create, :edit]
 
   # GET /customers
   # GET /customers.json
@@ -70,5 +71,9 @@ class CustomersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def customer_params
       params.require(:customer).permit(:name, :email, :phone, :address, :meal_count)
+    end
+
+    def plans
+      @plans = Plan.all.by_name
     end
 end

@@ -14,8 +14,8 @@
   <form action="#">
     <p>
       <!-- <input type="checkbox" id="optin" /> -->
-      <%= form.check_box :optin, id: :customer_optin %>
-      <%= form.label "Would you like meals this week?", for: :customer_optin  %>
+      <%#= form.check_box :optin, id: :customer_optin %>
+      <%#= form.label "Would you like meals this week?", for: :customer_optin  %>
     </p>
 
   <div class="input-field">
@@ -38,10 +38,11 @@
     <%= form.text_field :address, id: :customer_address, placeholder: "Address" %>
   </div>
 
-  <div class="input-field">
+  <div class="input-field col s12">
+    <%= form.text_field :meal_count, id: :customer_meal_count, placeholder: "Choose a Plan" %>
+</div>
     <%#= form.label :meal_count %>
-    <%= form.text_field :meal_count, id: :customer_meal_count, placeholder: "Meal Count" %>
-  </div>
+
 
   <div class="actions">
     <%= form.submit %>

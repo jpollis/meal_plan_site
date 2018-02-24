@@ -9,7 +9,6 @@
       <th>Email</th>
       <th>Phone</th>
       <th>Address</th>
-      <th>Optin</th>
       <th>Meal count</th>
       <th colspan="3"></th>
     </tr>
@@ -22,7 +21,7 @@
         <td><%= customer.email %></td>
         <td><%= customer.phone %></td>
         <td><%= customer.address %></td>
-        <td><%= customer.optin %></td>
+        <td><%#= customer.optin %></td>
         <td><%= customer.meal_count %></td>
         <td><%= link_to 'Show', customer %></td>
         <td><%= link_to 'Edit', edit_customer_path(customer) %></td>

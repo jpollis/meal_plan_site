@@ -16,6 +16,7 @@ class CustomersController < ApplicationController
   # GET /customers/new
   def new
     @customer = Customer.new
+    @plans = Plan.all
   end
 
   # GET /customers/1/edit
@@ -70,7 +71,7 @@ class CustomersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def customer_params
-      params.require(:customer).permit(:name, :email, :phone, :address, :meal_count)
+      params.require(:customer).permit(:name, :email, :phone, :address, :plan_id)
     end
 
     def plans

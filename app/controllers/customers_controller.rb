@@ -77,4 +77,5 @@ class CustomersController < ApplicationController
     def plans
       @plans = Plan.all.by_name
     end
+
 end

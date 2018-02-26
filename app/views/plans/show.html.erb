@@ -10,5 +10,12 @@
   <%= @plan.price %>
 </p>
 
+<p>
+  <strong>Current Customers:</strong><br>
+  <% @plan_count.each do |customer| %>
+  <%= customer.name %><br>
+  <% end %>
+</p>
+
 <%= link_to 'Edit', edit_plan_path(@plan) %> |
 <%= link_to 'Back', plans_path %>

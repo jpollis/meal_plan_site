@@ -8,3 +8,4 @@
 
 Plan.create(number: "5", price: "50")
 Plan.create(number: "10", price: "100")
+Plan.create(number: "0", price: "0")

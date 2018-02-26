@@ -21,6 +21,7 @@ class CustomersController < ApplicationController
 
   # GET /customers/1/edit
   def edit
+    @plans = Plan.all
   end
 
   # POST /customers

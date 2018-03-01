@@ -1,6 +1,6 @@
 class CustomersController < ApplicationController
   before_action :set_customer, only: [:show, :edit, :update, :destroy]
-  # before_action :plans, only: [:new, :create, :edit]
+  # before_action :plan_names, only: [:new, :create, :edit]
 
   # GET /customers
   # GET /customers.json
@@ -27,6 +27,7 @@ class CustomersController < ApplicationController
   # POST /customers
   # POST /customers.json
   def create
+    @plans = Plan.all
     @customer = Customer.new(customer_params)
 
     respond_to do |format|
@@ -75,7 +76,7 @@ class CustomersController < ApplicationController
       params.require(:customer).permit(:name, :email, :phone, :address, :plan_id)
     end
 
-    def plans
+    def plan_names
       @plans = Plan.all.by_name
     end
 

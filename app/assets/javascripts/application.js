@@ -14,3 +14,22 @@
 //= require turbolinks
 //= require materialize
 //= require_tree .
+$( document ).on('turbolinks:load', function() {
+  $("#mission").click(function() {
+  $('html,body').animate({
+    scrollTop: $("#our-mission").offset().top},
+    'slow');
+  });
+
+  $("#plans").click(function() {
+  $('html,body').animate({
+    scrollTop: $("#pricing").offset().top},
+    'slow');
+  });
+
+  $("#meals").click(function() {
+  $('html,body').animate({
+    scrollTop: $("#featured").offset().top},
+    'slow');
+  });
+});

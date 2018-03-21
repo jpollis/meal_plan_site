@@ -2,13 +2,32 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.nav-wrapper {
+  background-color: white;
+}
+
+.logo {
+  width: 4.8em;
+}
+
+a:active {
+  color: green;
+}
+
+.section {
+  padding-bottom: 15rem !important;
+}
 
 .veggies {
   width: 100%;
 }
 
+.veg-pic {
+  width: 100%
+}
+
 .options {
-  margin-top: -15em;
+  margin-top: -12em;
   position: relative;
 }
 

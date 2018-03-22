@@ -15,6 +15,7 @@
 //= require materialize
 //= require_tree .
 $( document ).on('turbolinks:load', function() {
+  
   $("#mission").click(function() {
   $('html,body').animate({
     scrollTop: $("#our-mission").offset().top},

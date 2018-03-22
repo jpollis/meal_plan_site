@@ -31,7 +31,7 @@ gem 'materialize-sass', '~> 1.0.0.alpha4'
 gem "jquery-rails", "~> 4.3"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem "bcrypt", "~> 3.1.11"
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

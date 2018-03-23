@@ -2,22 +2,20 @@
 <html>
   <head>
     <title>BrusBrandApp</title>
-  
+
     <%= csrf_meta_tags %>
 
     <!-- css -->
-
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-    <!-- javascript -->
 
+    <!-- javascript -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
   </head>
   <body>
-    <main>
+
       <%= yield %>
-    </main>
+    
   </body>
 </html>

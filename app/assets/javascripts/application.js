@@ -12,10 +12,11 @@
 //= require jquery
 //= require rails-ujs
 //= require turbolinks
-//= require materialize
+//= require bootstrap-sprockets
 //= require_tree .
+
 $( document ).on('turbolinks:load', function() {
-  
+
   $("#mission").click(function() {
   $('html,body').animate({
     scrollTop: $("#our-mission").offset().top},

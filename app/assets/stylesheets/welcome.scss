@@ -2,9 +2,42 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.nav-wrapper {
-  background-color: white;
+// .nav-wrapper {
+//   background-color: white;
+// }
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  color: white;
+  padding: 1% 0;
+  font-size: 1.2em;
+  border: 0;
 }
+
+.navbar-right {
+  font-size: 1.2em;
+}
+
+.navbar-brand {
+  float: left;
+  // min-height: 55px;
+  padding: 0 15px 5px;
+  color: white;
+}
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+  color: white;
+}
+
+// .navbar-inverse .navbar-nav li a {
+//   color: #D5D5D5;
+// }
+
+p {
+  font-size: 1.5em;
+}
+
 
 .logo {
   width: 4.8em;
@@ -15,7 +48,7 @@ a:active {
 }
 
 .section {
-  padding-bottom: 15rem !important;
+  padding-bottom: 25em !important;
 }
 
 .veggies {

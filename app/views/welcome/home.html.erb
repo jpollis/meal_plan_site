@@ -1,16 +1,32 @@
 <!-- <header> -->
 
-<div class="container-fluid">
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img class="logo" src="/assets/logo.png" width="55" height="55" class="d-inline-block align-top" alt="V-logo">
-    </a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand-center" href="#"> <img src="/assets/logo.png" width="60" height="60" alt=""> </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#" id="profile">My Account</a></li>
+          <li class="active"><a href="#" id="meals">Menu</a></li>
+          <li class="active"><a href="#" id="plans">Plans & Pricing</a></li>
+          <li class="active"><a href="#" id="mission">The Mission</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
   <!-- </header> -->
   <!-- background pic and brussel brand title, mission statement -->
-  <div class="brussel-brand">
-    <!-- <div class="overlay"></div> -->
+
+  <div class="container-fluid">
+    <img class="veggies" src="/assets/brusselbrand.png" alt="picture of logo">
+  </div>
+  <!-- <div class="brussel-brand">
     <%= image_tag "/assets/brusselbrand.png", class: "veggies" %>
   </div>
   <div class="section options">
@@ -25,39 +41,52 @@
         <h3><a href="" class="green-text" id="meals">Featured Meals</a></h3>
       </div>
     </div>
+  </div> -->
+
+
+  <div class="section"></div>
+
+
+  <div class="container-fluid" id="our-mission">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="text-center">Our Mission</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="/assets/veggies.jpg" alt="veggies" class="img-responsive">
+      </div>
+
+    </div>
+
   </div>
 
-  <div class="section space">
+  <!-- <div class="section space">
 
   </div>
 
   <div class="divider"></div>
   <div id="our-mission" class="section">
-    <!-- <div class="row container">
-    <div class="col s12">
-    <h1 class="bbm center">Brussel Brand's Mission</h1>
-    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-  </div>
-</div> -->
-<div class="row container">
-  <div class="col s12">
-    <div class="card">
-      <div class="card-image">
-        <img src="/assets/veggies.jpg">
-        <span class="card-title"><h2>Our Mission</h2></span>
-      </div>
-      <div class="card-content">
-        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offiia deserunt mollit anim id est laborum.</h5>
-      </div>
-      <div class="card-action">
-        <!-- <a href="#">This is a link</a> -->
+    <div class="row container">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/veggies.jpg">
+            <span class="card-title"><h2>Our Mission</h2></span>
+          </div>
+          <div class="card-content">
+            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offiia deserunt mollit anim id est laborum.</h5>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a> -->
+          <!-- </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
+  </div> -->
 
-<div class="divider"></div>
+<!-- <div class="divider"></div>
 <div id="pricing" class="section">
   <div class="row container">
     <div class="col s12">
@@ -75,5 +104,4 @@
       <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
     </div>
   </div>
-</div>
-</div>
+</div> -->

@@ -23,16 +23,27 @@
   float: left;
   // min-height: 55px;
   padding: 0 15px 5px;
-  color: white;
+  // color: white;
 }
 
 .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
-  color: white;
+  color: black;
 }
+
+#profile:hover, #meals:hover, #plans:hover, #mission:hover {
+  color: black;
+}
+
+
 
 .head {
   margin-bottom: 0em !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white !important;
+  border-color: white !important;
 }
+
 
 .background-bb {
   padding-left: 0 !important;
@@ -44,10 +55,41 @@
 //   color: #D5D5D5;
 // }
 
+.carousel-caption {
+  // top: 50%;
+  // transform: translateY(-50%);
+  text-transform: uppercase;
+}
+
+
+.btn {
+  font-size: 18px;
+  color: #FFF;
+  padding: 12px 22px;
+  background: green;
+}
+
 p {
   font-size: 1.5em;
 }
 
+.bb-backdrop {
+  background-color: black;
+  opacity: 0.8;
+  margin-top: 0em;
+  padding-top: 15em;
+  padding-bottom: 15em;
+}
+
+.bb-name {
+  font-family: 'Yellowtail', cursive;
+  font-size: 100px;
+  color: white;
+}
+
+.btn .learn {
+  background: green;
+}
 
 .logo {
   width: 4.8em;
@@ -62,7 +104,7 @@ a:active {
 }
 
 .veggies {
-  width: 100% !important;
+  width: 100%;
 }
 
 .veg-pic {
@@ -74,6 +116,16 @@ a:active {
   position: relative;
 }
 
+.steps {
+  margin-bottom: 2em;
+  font-size: 55px;
+}
+
+.each-step {
+  font-size: 30px;
+  color: green;
+}
+
 .overlay {
 position:absolute;
 width:100%;
@@ -82,9 +134,11 @@ background-color: black;
 opacity: 0.6;
 }
 
-// .how-it-works {
-//   padding: 0;
-// }
+.how-it-works {
+  padding-top: 10em;
+  padding-bottom: 10em;
+  color: lightgray;
+}
 //
 // .list-view {
 //   border-bottom: #8f8f8f solid 1px;

@@ -17,9 +17,9 @@
 
 $( document ).on('turbolinks:load', function() {
 
-  $("#mission").click(function() {
+  $("#mid-sec-scroll").click(function() {
   $('html,body').animate({
-    scrollTop: $("#our-mission").offset().top},
+    scrollTop: $("#mid-section").offset().top},
     'slow');
   });
 

@@ -6,6 +6,27 @@
 //   background-color: white;
 // }
 
+// for dark dim overlay
+html, body {
+  min-height: 100%;
+}
+body {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+// end overlay
+.bg-img {
+  background-image: url("veggies.jpg");
+}
+
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
@@ -45,12 +66,6 @@
 }
 
 
-.background-bb {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-
 // .navbar-inverse .navbar-nav li a {
 //   color: #D5D5D5;
 // }
@@ -74,11 +89,14 @@ p {
 }
 
 .bb-backdrop {
-  background-color: black;
-  opacity: 0.8;
   margin-top: 0em;
   padding-top: 15em;
   padding-bottom: 15em;
+}
+
+.top-sec {
+  background-color: black;
+  opacity: 0.8;
 }
 
 .bb-name {
@@ -95,13 +113,9 @@ p {
   width: 4.8em;
 }
 
-a:active {
-  color: green;
-}
-
-.section {
-  padding-bottom: 25em !important;
-}
+// .section {
+//   padding-bottom: 25em !important;
+// }
 
 .veggies {
   width: 100%;
@@ -126,13 +140,13 @@ a:active {
   color: green;
 }
 
-.overlay {
-position:absolute;
-width:100%;
-height:100%;
-background-color: black;
-opacity: 0.6;
-}
+// .overlay {
+// position:absolute;
+// width:100%;
+// height:100%;
+// background-color: black;
+// opacity: 0.6;
+// }
 
 .how-it-works {
   padding-top: 10em;

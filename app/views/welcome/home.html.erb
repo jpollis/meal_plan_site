@@ -3,17 +3,17 @@
   <nav class="navbar navbar-inverse head">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <button type="button" class="navbar-toggle hamburger" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand-center" href="#"> <%= image_tag "logo.png", size: "60x60" %> </a>
+        <a class="navbar-brand-center" href="#"> <%= image_tag "logo.png", size: "60x60", alt: "V-shaped-logo" %> </a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li class=""> <%= link_to "Signup/Login", new_customer_path, id: "profile" %> </li>
-          <li class=""><a href="#" id="meals" data-toggle="modal" data-target="#myModal">Menu</a></li>
+          <li class=""><a href="#" data-toggle="modal" data-target="#myModal">Menu</a></li>
           <li class=""><a href="#" id="plans">Plans & Pricing</a></li>
           <!-- <li class=""><a href="#" id="mission">The Mission</a></li> -->
         </ul>
@@ -116,7 +116,7 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-               <%= image_tag "menu.png", class: "img-responsive center-block" %>
+               <%= image_tag "menu.png", class: "img-responsive center-block", alt: "menu description" %>
               <div class="carousel-caption">
                 <!-- <h1>This Week's Meals</h1> -->
                 <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
@@ -124,14 +124,14 @@
               </div>
             </div>
             <div class="item">
-              <%= image_tag "ricebowl.png", class: "img-responsive center-block" %>
+              <%= image_tag "ricebowl.png", class: "img-responsive center-block", alt: "bowl of rice" %>
               <div class="carousel-caption">
                 <h2>Ricebowl</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </div>
             <div class="item">
-              <%= image_tag "new_buffalo.jpg", class: "img-responsive center-block" %>
+              <%= image_tag "new_buffalo.jpg", class: "img-responsive center-block", alt: "cauliflower on salad" %>
               <div class="carousel-caption">
                 <h2>Buffalo Cauliflower</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

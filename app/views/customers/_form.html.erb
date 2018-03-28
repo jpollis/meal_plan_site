@@ -1,30 +1,31 @@
 
 
 <!-- <form> -->
+<div class="container suf">
   <%= form_for(@customer) do |f| %>
    <div class="form-group row">
        <%= f.label :name %> <br>
-       <%= f.text_field :name %>
+       <%= f.text_field :name, class: "ip-area" %>
    </div>
    <div class="form-group">
      <%= f.label :email %> <br>
-     <%= f.email_field :email %>
+     <%= f.email_field :email, class: "ip-area" %>
    </div>
    <div class="form-group">
      <%= f.label :password %><br>
-     <%= f.password_field :password %>
+     <%= f.password_field :password, class: "ip-area" %>
    </div>
    <div class="form-group">
      <%= f.label :password_confirmation, "Password Confirmation" %><br>
-     <%= f.password_field :password_confirmation %>
+     <%= f.password_field :password_confirmation, class: "ip-area" %>
    </div>
-  <div class="form-group">
+  <!-- <div class="form-group">
     <%#= f.label :plan_id  %>
-    <%= f.select :plan_id, options_from_collection_for_select( @plans, "id", "number_and_price"), prompt: "Choose a Plan", class: "meals" %>
-  </div>
+    <%#= f.select :plan_id, options_from_collection_for_select( @plans, "id", "number_and_price"), prompt: "Choose a Plan", class: "meals" %>
+  </div> -->
 
-
-   <button type="submit" class="btn btn-primary">Submit</button>
+  <%= f.submit "Sign Up", class: "btn btn-primary" %>
    <% end %>
+</div>
 
 <!-- </form> -->

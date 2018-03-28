@@ -17,6 +17,10 @@
 
 $( document ).on('turbolinks:load', function() {
 
+  $('.nav a').click(function(){
+    $('.navbar-collapse').collapse('hide');
+  });
+
   $("#mid-sec-scroll").click(function() {
   $('html,body').animate({
     scrollTop: $("#mid-section").offset().top},

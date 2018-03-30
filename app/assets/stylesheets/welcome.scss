@@ -105,7 +105,12 @@ p {
 }
 
 #mid-section {
-  margin-top: 10em;
+  // margin-top: 10em;
+  // background-color: lightgray;
+}
+
+div#1st-section.row.text-center {
+  padding-top: 10em !important;
 }
 
 // .mid-sec-1 {
@@ -126,9 +131,9 @@ p {
   width: 4.8em;
 }
 
-// .section {
-//   padding-bottom: 25em !important;
-// }
+.section {
+  padding-bottom: 10em !important;
+}
 
 .veggies {
   width: 100%;
